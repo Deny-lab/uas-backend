@@ -53,8 +53,8 @@
                                 <?php $ctg_enk = encrypt_url($b['id_kategori']) ?>
 
 
-                                <a class="badge badge-success" href="<?= base_url('user/editberita/' . $id_enkrip . '/' . $ctg_enk); ?>">Edit</a>
-                                <a class="badge badge-danger" href="<?= base_url('rest_api_dummy/delete/' . $b['id_berita'] . '/' . $b['id_kategori']); ?>">Delete</a>
+                                <a class="badge badge-success" href="<?= base_url('api/edit/' . $id_enkrip); ?>">Edit</a>
+                                <a class="badge badge-danger" href="<?= base_url('api/delete/' . $b['id_berita'] . '/' . $b['id_kategori']); ?>">Delete</a>
                             </td>
                         </tr>
                         <?php $i++; ?>
@@ -83,7 +83,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form method="post" action="<?= base_url('rest_api_dummy/tambah_berita'); ?>" enctype='multipart/form-data'>
+            <form method="post" action="<?= base_url('api/tambah_berita'); ?>" enctype='multipart/form-data'>
 
                 <div class="modal-body">
                     <div class="mb-3">

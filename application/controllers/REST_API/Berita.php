@@ -48,6 +48,7 @@ class Berita extends REST_Controller
             'id_berita' => $this->put('id_berita'),
             'judul_berita' => $this->put('judul_berita'),
             'isi_berita' => $this->put('isi_berita'),
+            'tgl' => $this->put('tgl')
 
         );
 
@@ -75,6 +76,8 @@ class Berita extends REST_Controller
             $this->response(array('status' => 'Gagal', 502));
         }
     }
+
+    
 
     
 }

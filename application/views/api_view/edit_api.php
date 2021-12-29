@@ -7,17 +7,18 @@
 
     <div class="row">
         <div class="col-lg-4">
-            <form action="<?= base_url('user/update'); ?>" method="post">
+            <form action="<?= base_url('api/update'); ?>" method="post">
                 <input type="hidden" name="id_berita" value="<?= $ubah->id_berita ?>">
-                <input type="hidden" name="id_kategori" value="<?= $ubah_ctg->id_kategori ?>">
+                <!-- <input type="hidden" name="id_kategori" value="<?= $ubah_ctg->id_kategori ?>"> -->
                 <div class="mb-3">
                     <input type="text" class="form-control" id="judul_berita" name="judul_berita" aria-describedby="emailHelp" value="<?= $ubah->judul_berita ?>">
 
                 </div>
-                <div class="mb-3">
+
+                <!-- <div class="mb-3">
                     <input type="text" class="form-control" id="nama_kategori" name="nama_kategori" aria-describedby="emailHelp" value="<?= $ubah_ctg->nama_kategori ?>">
 
-                </div>
+                </div> -->
 
                 <div class="mb-3">
                     <input type="text" class="form-control" id="isi_berita" name="isi_berita" aria-describedby="emailHelp" value="<?= $ubah->isi_berita ?>">
